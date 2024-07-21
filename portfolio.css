@@ -1,0 +1,354 @@
+body{
+    background-image: url('kosen.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color:rgba(255,255,255,0.6);
+	  background-blend-mode:lighten;
+    line-height: 1
+}
+header{
+    margin: 2vw 0px 0px 2vw;
+    background: transparent;
+    display: block;
+    height:auto;
+    width: 100vw;
+    position:fixed;
+    z-index: 100;
+    top: 0;
+}
+#header-nav{
+    display:flex;
+    background: transparent;
+}
+#js-g04{
+    font-family: "kirei2";
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-size :clamp(0.1rem, 0.682rem + 1.0vw, 1.5rem) ;
+}
+#link{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    display: flex;
+    position: absolute;
+    right: 5.5vw;
+    line-height: 4.5vw;
+}
+li{
+    margin-left: 5vw;
+}
+
+.c-txt.line.a1{
+  color: #113286;
+}
+.c-txt.line.a2{
+  color: #0657b4;
+}
+.c-txt.line {
+  font-family: "kirei3";
+  font-size :clamp(1.0rem, 0.682rem + 1.5vw, 5.0rem) ;
+  letter-spacing: .1em;
+  text-decoration: none;
+  padding-bottom: 5px;
+  position: relative;
+  transition: 0.3s;
+}
+.c-txt.line:hover{
+  opacity: .6;
+}
+.c-txt.line::before {
+  background: #09bbd7;
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: transform .3s;
+}
+.c-txt.line:hover::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+  
+}
+#main{
+    width: 100vw;
+    height: 100vh;
+}
+#top_explain{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+#welcome{
+    text-align: center;
+    margin-bottom: 3%;
+}
+#js-g02{
+    display: inline;
+    
+    opacity: 0;
+    font-family: "kirei3";
+    font-size: 100%;
+    text-align: center;
+    font-size :clamp(1.0rem, 0.682rem + 1.5vw, 5.0rem) ;
+}
+#myportfolio{
+  display: inline;
+    font-family: "kirei3";
+    opacity: 0;
+    font-size: 100%;
+    text-align: center;
+    font-size :clamp(0.5rem, 0.682rem + 1.0vw, 5.0rem) ;
+}
+#profile_p{
+    font-family: "kirei3";
+    font-size: 100%;
+    margin-left: 10%;
+    font-size :clamp(1.0rem, 0.682rem + 2.5vw, 5.0rem) ;
+}
+#sakuseibutu{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background-color:rgba(255,255,255,0.6);
+}
+#load{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #99CCFF;
+    z-index: 555;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loaded {
+    opacity: 0;
+    transition: .5s;
+    visibility: hidden;
+  }
+.loader {
+    color: #ffffff;
+    font-size :clamp(3.0rem, 0.682rem + 8.0vw, 12.0rem) ;
+    text-indent: -9999em;
+    overflow: hidden;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    margin: 72px auto;
+    position: relative;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+    animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+  }
+  @-webkit-keyframes load6 {
+    0% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+  }
+  @keyframes load6 {
+    0% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+  }
+  @-webkit-keyframes round {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes round {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+.nowload{
+    text-align: center;
+    position: absolute;
+
+    top: 65%;
+    font-size :clamp(0.01rem, 0.7rem + 0.5vw, 2.0rem) ;
+}
+.js-g08{
+  display: inline-block;
+  font-family: "kirei";
+}
+
+@font-face {
+  font-family: "kirei";
+  src: url("fonts/ttf/DotGothic16-Regular.ttf") format("truetype"); 
+}
+@font-face {
+  font-family: "kirei2";
+  src: url("melete_0200/Melete-Medium.otf")format("opentype"); 
+}
+@font-face {
+  font-family: "kirei3";
+  src: url("IBM_Plex_Sans_JP/IBMPlexSansJP-Light.ttf")format("opentype"); 
+}
+@font-face {
+  font-family: "kirei4";
+  src: url("ipaexm00401/ipaexm.ttf")format("truetype"); 
+}
+dl{
+  margin-left:10%;
+  font-family: "kirei4";
+  font-size :clamp(0.1rem, 0.8rem + 0.5vw, 1.0rem) ;
+}
+dt{
+  float: left;
+  width: 8em;
+  margin:0,0,0,0;
+  display: block;
+  unicode-bidi: isolate;
+}
+dd{
+  margin:0,0,0,0;
+  padding: 0 0 15px 7em;
+  display: block;
+  margin-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+ul{
+  margin-top: 15px;
+  padding: 0;
+  list-style-type: circle;
+}
+#zikoshokai{
+  margin-bottom: 10px;
+}
+#work_s{
+  font-size :clamp(0.1rem, 0.6rem + 1.5vw, 3.0rem) ;
+}
+.c-txt.line.a1.b1{
+ margin-left: 40%;
+}
+.sakuseisetumei{
+  margin-left: 10%;
+}
+.sakuseisetumei.p1{
+  width: 52vw;
+}
+.sakuseisetumei.p2{
+  width: 52vw;
+}
+.sakuseisetumei.p3{
+  width: 50vw;
+}
+.sakuseisetumei.p4{
+  width: 51vw;
+}
+.responsive-video {
+  position: relative;
+  padding-bottom: 25%;
+  height: auto;
+  margin-left: 10%;
+  overflow: hidden;
+  max-width: 400pX;
+}
+.responsive-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.image-container {
+  max-width: 400px; 
+  margin-left: 10%;
+
+}
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+footer{
+  width: 100vw;
+  height: 20vw;
+  display: block;
+  background-color: #191919;
+  position: relative;
+}
+#inner{
+  height: 70%;
+}
+#footername{
+  color: #e5e5de;
+    font-size: 1.3vw;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: bold;
+    letter-spacing: .5em;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
